@@ -1,0 +1,90 @@
+*
+{
+  border-radius: 0 !important;
+}
+.backgroud-image
+{
+  background-image: url('/assets/images/district.jpg'); 
+  background-repeat: no-repeat; 
+  // background-size: cover; 
+  height: 90%;
+  background-color:red;
+  background-position: center center;
+
+} 
+.container 
+{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+}
+.link 
+{
+  color: #ffcc32;
+}
+.img-align
+{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.img 
+{
+  width: 80%;
+  height: 30%;
+}
+.btn
+{
+  background:#ffcc32;
+  color: black;
+}
+.hadding
+{
+  color:#e5e5e5;
+  font-weight: 100; 
+  font-size: 30px;
+}
+.font-size 
+{
+  color:#e5e5e5;
+  font-weight: 100; 
+  font-size: 48px;
+}
+.paragraph 
+{
+  color:#948d8d;  
+}
+
+.btn-xl 
+{
+  padding: 6px 24px;
+  font-size: 14px;
+  border: none;
+}
+.btn-small 
+{
+  background:red;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 786px) 
+{
+  .btn-xl 
+  {
+    padding: 4px 12px;
+    font-size: 10px;
+  }
+  .hadding
+  {
+    color:#e5e5e5;
+    font-weight: 100; 
+    font-size: 20px;
+  }
+  .font-size 
+  {
+    color:#e5e5e5;
+    font-weight: 100; 
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,42 @@
+<div class="featured-menu">
+  <nav class="navbar navbar-custom wrappers navbar-expand-lg">
+    <a class="nav-link px-5 " href="#">FEATURED :</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler" aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navToggler">
+      <ul class="nav navbar-nav nav-tabs" role="tablist">
+        <li class="nav-item featured" (click)="onSelectLatest(selectedCategory=category)">
+          <a  href="#" class="nav-link px-4 active" data-toggle="tab" >LATEST ARRIVALS</a>
+        </li>
+        <li class="nav-item" *ngFor="let category of category_list" (click)="onSelectCat(selectedCategory=category.id)">
+          <a class="nav-link px-4 " data-toggle="tab">{{ category.name }}</a>
+        </li>
+      </ul>
+    </div>
+    
+  </nav>
+  
+  <!-- <input type="text" matInput ngxDaterangepickerMd [locale]="{applyLabel: 'ok', format: 'DD-MM-YYYY'}"
+    startKey="startDate" endKey="endDate" [(ngModel)]="selectedDaterange" name="daterange" (change)= 'selectDateRange()' placeholder="choose date"/>  -->
+
+  <div class="wrapper">
+    <div class="date-piker" *ngIf="selectedCategory !== undefined">
+      <form [formGroup]="DateSelection" (submit)="onSelectCat(selectedCategory)">
+        <label for="start">Start date: </label>
+        <input formControlName="start" type="date">
+        <label for="end">End date:</label>
+        <input formControlName="end" type="date">
+        <button type="submit" [disabled]="DateSelection.invalid" class= "button btn">Apply</button>
+      </form>
+    </div>
+
+    <swiper [config]="config" [(index)]="index">
+      <div *ngFor="let product of product_list tags">
+        <img class="img-fluid" src='/assets/images/{{product.image}}' alt="">
+        <p class="image-tag">{{ product.name }}</p>
+      </div>
+    </swiper>
+  </div>
+</div>
+

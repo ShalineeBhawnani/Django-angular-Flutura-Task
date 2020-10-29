@@ -1,0 +1,206 @@
+// 1st navbar
+.mat-toolbar 
+{
+    height: 5vh;
+    background: #252525; 
+    color: #fff;
+    letter-spacing: 0.03em ;
+    font-weight:50;
+}
+.mat-toolbar a
+{
+    text-decoration:none;
+}
+.navbar-nav ::placeholder 
+{ 
+    color:#d4bfbf;
+    opacity: 1;
+}
+.navbar-nav::-webkit-input-placeholder 
+{
+    font-style: italic;
+}
+.mat-sidenav-container
+{
+  background-color: #ffffff;
+}
+.example-spacer 
+{
+    flex: 1 1 auto;
+}
+.mat-sidenav-content
+{
+    text-align: center;
+}
+.shopping 
+{
+    color:#ffc71b;
+}
+.shopping i
+{
+    color:#ffc71b;
+    font-size: medium;
+}
+// i 
+// {
+//     color: white;
+// }
+// 2nd navbar
+.logo
+{
+    height: 94px;
+}
+.input-field
+{
+    height:40px;
+    width: 400px; 
+}
+@media (max-width: 425px) 
+{
+    .navbar-nav 
+    {
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .logo
+    {
+        display: block;
+        margin-left: 5%;
+        margin-right: auto;
+        width: 100%;
+    }
+    .input-field
+    {
+        height:40px;
+        width: auto; 
+    }
+    .order-list 
+    {
+        display: none;
+    }
+}
+@media (max-width: 786px) 
+{
+    .order-list 
+    {
+        display: none;
+    }
+    .navbar-custom-style 
+    {
+        display: none;
+    }
+}
+@media (max-width: 1024px) 
+{
+    .navbar-custom-style 
+    {
+        display: none;
+    }
+    .navbar-custom-style 
+    {
+        display: none;
+    }
+}
+
+.search-box 
+{
+    background: #252525;
+    border: none;
+}
+
+.shipping 
+{
+    color:#ffc71b;
+    font-weight: normal;
+    // text-align: center;
+    margin-bottom: -2px;
+}
+.br 
+{ 
+    display: block; 
+    margin-bottom: 0em; 
+} 
+.order 
+{
+    color:#989898;
+    text-align: center;
+    font-size: 11px;
+    text-align: center;
+}
+
+.navbar-custom
+{ 
+    background: #ffcc30; 
+    padding-bottom: 0;
+    padding-top: 0;
+    font-weight: 300;
+    // margin-top: 2px;
+    // margin-bottom: -2px;
+} 
+.navbar-custom a 
+{
+    color: black;
+}
+.navbar-font-style a
+{
+    font-weight: 600;
+    letter-spacing: 0.04em ;
+    font-size: 82%;
+}
+.navbar-custom-style 
+{ 
+    background-color: #ffffff; 
+    margin-bottom: 0;
+    padding: 0;
+    letter-spacing: 0.03em ; 
+} 
+
+.navbar-custom-style a 
+{
+    color: #525252; 
+}
+.wrapperr 
+{
+    padding-left: 5.2%;
+    padding-right: 4%;
+}
+.wrapper
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.wrappers 
+{
+    padding-left: 5%;
+    padding-right: 5.7%;
+}
+.nav-wrapper
+{
+    padding-left: 4.2%;
+    padding-right: 5%;
+}
+.bullets  
+{
+    list-style-type: disc !important;
+    padding-left:2em !important;
+    margin-left:.8em;
+}
+.space li
+{
+    padding-right: 1.45%;
+}
+.nav-tabs
+{
+    border-bottom: none ;
+}
+.active 
+{
+    background-color: rgb(36, 36, 36)!important;
+    color: white !important;
+}
+.camera a 
+{
+    color: #c4b5b5;
+}

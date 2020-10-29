@@ -1,0 +1,109 @@
+
+<div> 
+  <mat-toolbar color="primary" class="wrapper">
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <a mat-button class="nav-link dropdown-toggle" data-toggle="dropdown" routerLink="/">
+      <span>HELP CENTER</span>
+    </a>
+    <a mat-button class="" routerLink="/">
+      <span>EDUCATION</span>
+    </a>
+    
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button routerLink="/">REGISTER</a>
+      <a mat-button routerLink="/">LOGIN</a>
+      <a mat-button routerLink="/">WISHLIST</a>
+      <a mat-button class="shopping" routerLink="/">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        &nbsp;YOUR CART(0)
+      </a>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+        <a mat-button routerLink="/">REGISTER</a>
+        <a mat-button routerLink="/">LOGIN</a>
+        <a mat-button routerLink="/">WISHLIST</a>
+        <a mat-button routerLink="/">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          &nbsp;YOUR CART(0)</a>
+      </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <nav class="navbar navbar-expand-lg wrappers">
+      <a class="navbar-brand d-flex " href="#"><img class="logo" src="assets/images/camera.jpg"></a>
+      <div class="navbar-nav ml-auto">
+        <div class="input-group">
+          <input class="form-control my-0 py-1 amber-border input-field" type="text" placeholder="Search for a product brand category" aria-label="Search">
+          <div class="input-group-append">
+            <span class="input-group-text search-box" id="basic-text1"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-nav ml-auto order-list">
+        <a class="nav-item nav-link " href="#"><h3 class="shipping">FREE SHIPPING<span class="order br">ON ORDER ON $99</span></h3></a>
+      </div>
+    </nav>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<!-- 3rd navbar -->
+<div>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom navbar-font-style wrapperr">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navToggle">
+      <ul class="nav navbar-nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab">SHOP FOR GEAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" data-toggle="tab">USER GEAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" data-toggle="tab">RENTAL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" data-toggle="tab">PRINTING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-4" data-toggle="tab" >VIDEO CENTER</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-4" data-toggle="tab">BUYERS GUIDE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" data-toggle="tab">RENTAL CAMERA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" data-toggle="tab">WORKSHOP</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-4" data-toggle="tab">BRAND</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-4 hide active" data-toggle="tab" routerLink="/product-form">SALES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" data-toggle="tab">POWER SUPPLIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab">CLASSESS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

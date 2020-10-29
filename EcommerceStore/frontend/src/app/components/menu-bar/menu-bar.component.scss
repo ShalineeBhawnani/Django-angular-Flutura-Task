@@ -1,0 +1,61 @@
+
+.navbar-font-style a
+{
+    font-weight: 600;
+    letter-spacing: 0.04em ;
+    font-size: 82%;
+}
+
+.navbar-custom-style 
+{ 
+    background-color: #ffffff; 
+    margin-bottom: 0;
+    padding: 0;
+    letter-spacing: 0.03em ; 
+} 
+.nav-custom 
+{ 
+    background-color: rgb(36, 36, 36); 
+    // line-height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;  
+    color: #797979;
+   
+} 
+.navbar-custom-style a 
+{
+    color: #525252; 
+}
+.wrapper
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.nav-wrapper
+{
+    padding-left: 4.2%;
+    padding-right: 5%;
+}
+.bullets  
+{
+    list-style-type: disc !important;
+    padding-left:2em !important;
+    margin-left:.8em;
+}
+.space li
+{
+    padding-right: 1.45%;
+}
+.nav-tabs
+{
+    border-bottom: none ;
+}
+.active 
+{
+    background-color: rgb(36, 36, 36)!important;
+    color: white !important;
+}
+.camera a 
+{
+    color: #c4b5b5;
+}
