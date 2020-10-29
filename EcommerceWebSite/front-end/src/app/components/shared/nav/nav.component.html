@@ -1,0 +1,9 @@
+<div class="topnav">
+    <a><app-header></app-header></a>
+    <a >{{username}}</a>
+    <a class="btn btn-primary" [routerLink]="['/register']">Sign up</a>
+    <a class="btn btn-outline-secondary" [routerLink]="['/login']">Login</a>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <button (click)="cartItems()"><i class="fa fa-shopping-cart"></i>Cart</button>
+</div>

@@ -1,0 +1,12 @@
+<!-- 
+<h2 style="text-align:center">All Products</h2> -->
+<div style="text-align:center" *ngFor="let product of product_list">
+    <div class="card">
+        <img src='/assets/images/{{product.picture}}' alt="not found"/>
+        <h1>{{ product.name }}</h1>
+        <strong>{{ product.price | currency:'INR' }}</strong>
+        <p class="card-text">{{ product.description | slice: 0:80 }}</p>
+        <button type="button" (click)="handleAddToCart(product)">Add to Cart</button>
+        <button type="button" >View Details</button>
+    </div>
+</div>

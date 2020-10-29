@@ -1,0 +1,35 @@
+
+<app-nav></app-nav>
+<div class="card">
+
+    <div *ngIf="cartItems.length === 0">Your Cart is Empty.</div>
+
+    <ul *ngIf="cartItems.length > 0">
+        <li *ngFor="let cartitem of cartItems">
+    
+                <!-- <span>{{ cartitem.product_id }}</span>&nbsp;&nbsp; -->
+                <span>{{ cartitem.quantity }}</span>x
+                <span>{{ cartitem.price}}</span>=
+                <strong>{{ (cartitem.quantity * cartitem.price) | currency:'INR' }}</strong>   
+                <!-- <button>Remove From Cart</button> -->
+        </li>
+        <li>
+            <strong>Total </strong> {{ cartTotal | currency:'INR' }}
+        </li>
+        
+    </ul>
+</div>
+  <div class="row">
+      <app-footer></app-footer>
+</div>
+  
+
+
+
+
+   
+       
+          
+        
+      
+     
