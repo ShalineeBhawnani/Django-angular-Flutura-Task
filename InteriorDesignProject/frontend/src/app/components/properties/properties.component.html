@@ -1,0 +1,33 @@
+
+<div class="container">
+    <section class="section web-wrapper">
+      <h2>PORTFOLIO</h2>
+      <div class="nav-container">
+          <ul class="navigation" (click)="myColor()">
+            <li (click)="onSelectsAll()"><a>ALL</a></li>
+            <li *ngFor="let property of property_list" (click)="onSelects(property)"><a>{{ property.name }}</a></li>
+          </ul>
+      </div> 
+    </section>
+    <div class="web-wrapper" >
+      <table #dataTable class="myTable">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>name</th>
+              <th>phone_number</th>
+              <th>service</th>
+              <th>property_id</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let property of product_list">
+              <td>{{ property.id }}</td>
+              <td>{{ property.name}}</td>
+              <td>{{ property.phone_number}}</td>
+              <td>{{ property.service}}</td>
+              <td>{{ property.property_id}}</td>
+            </tr>
+          </tbody>
+      </table>
+</div>

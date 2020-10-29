@@ -1,0 +1,114 @@
+.background {  
+  background-image: url('/assets/images/3d.jpg');
+}
+.section { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  flex-wrap: wrap;
+  padding: 3em 7%;
+}
+.content h1 {
+  display: block;
+  width: fit-content;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  font-family: 'Alata', sans-serif;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 0;
+    
+
+}
+.input-container {
+  position: relative;
+}
+.input-container i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 12px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #aaa;
+  transition: 0.3s;
+  
+}
+input, select, email,textarea {
+  width: 100%;
+  display: block;
+  min-height: 45px;
+  padding: 9px 40px;
+  line-height: 22px;
+  font-weight: 400;
+  background-color: #eeebeb;
+  border: 2px solid #eeebeb;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+  color:#221F1E;
+  padding-left: 40px;
+  margin-top:15px;
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+::-webkit-input-placeholder {
+  color:#221F1E;
+}
+textarea:focus {
+  border-color:  #f0f0f0;
+  box-shadow: 0 0 8px 0 rgb(201, 195, 195);
+}
+input:focus {
+  border-color: #f0f0f0;
+  box-shadow: 0 0 8px 0 rgb(201, 195, 195);
+}
+select:focus {
+  border-color:  #f0f0f0;
+  box-shadow: 0 0 8px 0 rgb(201, 195, 195);
+}
+email:focus {
+  border-color:  #f0f0f0;
+  box-shadow: 0 0 8px 0 rgb(201, 195, 195);
+}
+.error {
+  color: rgb(255, 0, 0);
+  letter-spacing: .5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 80%;
+}
+form h1 {
+  position: relative;
+  font-size: 18px;
+  color: #221f1e;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 10%;
+  /* font-family: lato; */
+}
+form h1:before {
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  height: 0;
+  width: 50px;
+  content: '';
+  border-top: 1.3px solid red;
+}
+button {
+  width: 7em;  height: auto;
+}
+@media screen and (max-width: 786px){
+.content h1 { 
+  font-size: 1.5rem;
+}
+}

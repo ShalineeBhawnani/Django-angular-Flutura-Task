@@ -1,0 +1,13 @@
+
+<app-nav></app-nav>
+<div class="container">
+<div class="wrapper">
+    <form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()">       
+        <label class="fileContainer">
+           Choose File
+        <input type="file" name="myfile" (change)="onFileSelect($event)" class="custom-file-input"/>
+        </label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit"  [disabled]="uploadForm.invalid">Upload</button>
+    </form>
+</div>
+</div>

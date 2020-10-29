@@ -1,0 +1,94 @@
+<div class="container">
+     <img src="assets/images/logo.png" class="center">
+     <div class="navbar web-wrapper ">
+        <div class="navbar__link navbar__link-toggle">
+            <i  (click)="classToggle()" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <nav class="navbar__items">
+            <div class="navbar__link first" *ngFor="let user of userdata">
+                <i class="fa fa-map-marker"></i>
+                <a href="">Address:{{ user.address }}</a>
+            </div>   &nbsp;   &nbsp;
+            <div class="navbar__link first" *ngFor="let user of userdata">
+                &nbsp; &nbsp;<i class="fa fa-phone"></i>
+                <a href="">{{ user.phone_number }}</a>
+            </div>
+        </nav>
+        <nav class="navbar__items">
+            <div class="navbar__link second">
+                <a href="https://www.facebook.com/"><i class="fa">&#xf09a;</i></a>
+            </div>
+            <div class="navbar__link second">
+                <a href="https://twitter.com/login?lang=en"><i class="fa">&#xf099;</i></a>
+            </div>
+            <div class="navbar__link second">
+                <a href="https://www.google.co.in/"><i class="fa">&#xf0d5;</i></a>
+             
+            </div>
+            <div class="navbar__link second">
+                <a href="https://vimeo.com/tag:login"><i class="fa">&#xf27d;</i></a>
+            </div>
+            <div class="navbar__link second">
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a> 
+            </div>
+            <div class="navbar__link second">
+                <a href="https://www.pinterest.ru/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+    </div> 
+     <div class="nav-container web-wrapper">
+        <!-- <div class="navbar__links Navbar__Link-toggles">
+            <i (click)="classSecondToggle()" class="fa fa-bars" aria-hidden="true"></i>
+        </div> -->
+        <div>
+            <h1 class="logo navbar__links">INTERIART</h1>
+        </div>
+        <ul class="navigation">
+            <li class="navbar__links"><a href="#home" class="active">Home</a></li>
+            <li class="navbar__links"><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#properties">Portfolio</a></li>
+            <li><a href="/highcharts">Charts</a></li>
+            <li><a href="/highchart">Chart</a></li>
+            <li><a href="/fileupload">File</a></li>
+            <li><a href="#contact us">Contact us</a></li>
+        </ul>
+    </div>
+</div>
+    <!-- <div class="Navbar web-wrapper">
+        <div class="Navbar__Link Navbar__Link-toggle">
+            <i  (click)="classSecondToggle()" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    <nav class="Navbar__Items">
+        <div class="Navbar__Link">
+            <h1 class="logo navbar__links">INTERIART</h1>
+        </div>
+    </nav>
+    <nav class="Navbar__Items Navbar__Items--right">
+        <div class="Navbar__Link">
+            <a class="navbar__links" href="#home" class="active">Home</a>
+        </div>
+        <div class="Navbar__Link">
+            <a class="navbar__links" href="#about">About</a>
+        </div>
+        <div class="Navbar__Link">
+            <a class="navbar__links" href="#service">Service</a>
+        </div>
+        <div class="Navbar__Link">
+            <a class="navbar__links" href="#properties">portfolio</a>
+        </div>
+        <div class="Navbar__Link">
+            <a class="navbar__links" href="#testimonials">testimonials</a>
+        </div>
+        <div class="Navbar__Link">
+            <a class="navbar__links" href="#team">team</a>
+        </div>
+        <div class="Navbar__Link">
+            <a class="navbar__links" href="#news">news</a>
+        </div>
+        <div class="Navbar__Link">
+            <a class="navbar__links" href="#contact us">Contact us</a>
+        </div>
+    
+    </nav>
+    </div> -->

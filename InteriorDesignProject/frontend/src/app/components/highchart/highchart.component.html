@@ -1,0 +1,36 @@
+<app-nav></app-nav>
+<div class="container">
+  <section class="web-wrapper ">
+    <div>
+      <div id="barChart" class="barCharts">
+        <h5>Bar Chart - Population</h5>
+      </div>
+      
+       
+      <div id="container" class="barCharts"></div>
+    
+      <select #mySelect (change)="onOptionsSelected(mySelect.value)">	  			
+        <option value="1">AVG</option>
+        <option value="2">MIN</option>
+        <option value="3">MAX</option>
+      </select> 
+      <div id="passenger_container" class="barCharts"></div>
+
+    </div>
+    <div>
+      <h1>
+        {{title}}!
+      </h1>
+      <canvas class="barCharts"
+          baseChart
+          [chartType]="'line'"
+          [datasets]="chartData"
+          [labels]="labels"
+          [options]="chartOptions"
+          [legend]="true"
+          (chartClick)="onChartClick($event)">
+      </canvas>
+    </div>
+</section>
+</div>
+

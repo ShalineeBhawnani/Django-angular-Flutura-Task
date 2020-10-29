@@ -1,0 +1,50 @@
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: auto;
+    max-width: 500px;
+    padding: 2rem;
+    width: 100%;
+    background-color: lawngreen;
+    text-align: center;
+    color: white;
+    
+  }
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    
+}
+button {
+    padding: 12px;
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid rgb(105, 27, 27);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00b28f;
+  }
+  

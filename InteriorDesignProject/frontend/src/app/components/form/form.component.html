@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="background">
+        <section class="section web-wrapper ">
+            <div class="content">
+                <h1>WE CREATE COZINESS FOR</h1> 
+                <h1>YOUR APARTMENT</h1> 
+            </div>
+            <form [formGroup]="registerForm" (submit)="onSubmit()">
+                <h1>GET A QUOTE</h1>
+                <div class="input-container">
+                    <i class="fa fa-user icon" aria-hidden="true"></i>
+                    <input type = "text" id="name" formControlName="name" required="required" placeholder="Your name" onfocus="this.placeholder = ''"
+                     onblur="this.placeholder = 'Your name'" (keyup)="validate()" class="input-with-icon" />
+                </div>
+                <span class="error" id=name_error></span>
+                <div class="input-container">
+                    <i class="fa fa-phone icon"></i>
+                    <input type = "text" id="phone_number" formControlName = "phone_number" placeholder="Your phone" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Your phone'" (keyup)= "ValidateNo()" class="input-with-icon" />
+                </div>
+                <span class="error" id=phone_error></span>
+            
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type ="email" required id="email" formControlName = "email" placeholder="Your e-mail" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Your e-mail'" (keyup)= "ValidateEmail()" class="input-with-icon" /> 
+                </div>
+                <span class="error" id=email_error ></span>
+                <div class="input-container select_box">
+                    <i class="fa fa-home icon" aria-hidden="true"></i>
+                    <select formControlName="property">
+                    <option value="">Type of property</option>
+                    <option value="1">Commercial</option>
+                    <option value="2">Residencial</option>
+                    <option value="3">Office</option>
+                    <option value="4">Other</option>
+                    </select>
+                </div>
+                <div class="input-container select_box">
+                    <i class="fa fa-cog icon"></i>
+                    <select formControlName="service" class="Field"> 
+                        <option value="">Type of service</option>
+                        <option value="Interior Design">Interior Design</option>
+                        <option value="Decorative services">Decorative services</option>
+                        <option value="Space Planning">Space Planning</option>
+                        <option value="Project Management">Project Management</option>
+                    </select>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-envira icon"></i>
+                    <textarea formControlName="message" placeholder="  Your message" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Your message'" class="input-with-icon" ></textarea>
+                </div>
+                <button type="submit" [disabled]="registerForm.invalid" class= "button btn" >SUBMIT</button>
+            </form>
+        </section>
+    </div>
+</div>

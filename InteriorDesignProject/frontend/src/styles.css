@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+
+}
+.container {
+  width: 99%;
+  margin: 0 auto;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  
+}
+.button{
+  background-color: #f4655f;
+  border: none;
+  color: white;
+  margin-top: 1em;
+  padding: 12px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 80%;
+  cursor: pointer;
+  
+}
+@media all and (max-width: 600px) {
+  .button {
+    padding: 8px 8px;
+  }
+
+}
+.web-wrapper {
+  padding-right: 7%;
+  padding-left: 7%;
+}
+
+.background {  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'Montserrats';
+  src: url('assets/fonts/Bold/Montserrat-Bold.ttf')
+}
+
+@font-face {
+  font-family: 'Robotos';
+  src: url('assets/fonts/Bold/Roboto-Bold.ttf')
+}
